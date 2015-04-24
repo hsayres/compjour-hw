@@ -15,14 +15,22 @@ newBooks = 0
 maxRank = 1000
 titleMaxRank = ""
 rankIncrease =0
-increaseTitle = ""
+increasetitle = ""
 increaseRank = 0
+rankDrop =0
+dropTitle = ""
+dropRank = 0
+minRank = 0
 s=0
 t=0
 u=0
 titleMax=0
+titleCount =0
+total = 0
 
 for book in books:
+	titleCount+= len(book['title'])
+	total+=1
 	if book['publisher'] == "Scribner":
 		x += 1
 	description = book['description']
@@ -47,9 +55,13 @@ for book in books:
 			u += 1
 		if dif > 0:
 			t += dif
-		if dif < rankIncrease:
+		if dif < rankDrop:
+			rankDrop = dif
+			dropTitle = book['title']
+			dropRank = book['rank']
+		if dif > rankIncrease:
 			rankIncrease = dif
-			increaseTitle = book['title']
+			increasetitle = book['title']
 			increaseRank = book['rank']
 	if len(book['title']) >titleMax:
 		titleMax = len(book['title'])
@@ -60,11 +72,12 @@ seq2 = (minRankTitle, str(curRank), str(minRank))
 psv2 = '|'.join(seq2)
 seq3 = (titleMaxRank, str(maxRank))
 psv3 = '|'.join(seq3)
-seq4 = (increaseTitle, str(increaseRank), str(rankIncrease))
+seq4 = (dropTitle, str(dropRank), str(rankDrop))
 psv4 = '|'.join(seq4)
 seq5 = (str(u), str(s))
 psv5 = '|'.join(seq5)
-seq6 = 
+seq6 = (increasetitle, str(increaseRank), str(rankIncrease))
+psv6 = '|'.join(seq6)
 
 
 print('A. ', x)
@@ -73,11 +86,12 @@ print('C. ', psv)
 print('D. ', psv2)
 print('E. ', newBooks)
 print('F. ', psv3)
-print('G. ', )
+print('G. ', psv6)
 print('H. ', psv4)
 print('I. ', t)
 print('J. ', psv5)
 print('K. ', titleMax)
+print('L. ', round(titleCount/total, 0))
 
 
 
