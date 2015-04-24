@@ -35,7 +35,7 @@ for a in accounts:
     	followerMaxName = a['screen_name']
     if a['verified'] == True:
     	y += 1
-    if hasattr(a, 'verified')== False:
+    if a['verified'] ==False:
     	if a['statuses_count'] > maxTweetsUnverified:
     		maxTweetsUnverified = a['statuses_count']
     		maxTweetsName = a['screen_name']
