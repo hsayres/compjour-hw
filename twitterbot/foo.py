@@ -32,3 +32,15 @@ def make_feedme_text():
     Returns:
         A text string with the #FEEDME hashtag and something extra special
     """
+
+def get_closest_restaurant(longitude, latitude):
+    """
+    Given a location, returns the name of a restaurant and its address in string form.
+    Arguments:
+        Location-- longitude and latitude, as specified by the user if they tweet an
+        address, the bot finds the longitude and latitude using the Google maps API.
+        If they don't tweet an address but the tweet is geolocated, it uses that latitude
+        and longitude.
+    Returns:
+        A text string with the name of a restaurant and its address
+    """
