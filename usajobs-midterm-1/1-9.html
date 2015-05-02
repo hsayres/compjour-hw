@@ -1,21 +1,4 @@
-import requests
-import json
-BASE_USAJOBS_URL = "https://data.usajobs.gov/api/jobs"
-USDICT_URL =  "http://stash.compjour.org/data/usajobs/us-statecodes.json"
-data = json.loads(requests.get(USDICT_URL).text)
-statelist=[]
-thelist = []
-thelist.append(["State", "Job Count"])
-for key in data:
-	statelist.append(key)
-for state in statelist:
-    atts = {'CountrySubdivision': state, 'NumberOfJobs': 1}
-    resp = requests.get(BASE_USAJOBS_URL, params = atts)
-    jobcount = int(resp.json()['TotalJobs'])
-    isocode = "US-" + data[state]
-    thelist.append([isocode, jobcount])
 
-chartcode = """
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -28,7 +11,7 @@ chartcode = """
 
       function drawRegionsMap() {
 
-        var data = %s
+        var data = [['State', 'Job Count'], ['US-WY', 151], ['US-MI', 246], ['US-DE', 51], ['US-WV', 146], ['US-NC', 288], ['US-GA', 382], ['US-CO', 379], ['US-ID', 155], ['US-AK', 230], ['US-IL', 276], ['US-KY', 177], ['US-TX', 607], ['US-HI', 182], ['US-WA', 398], ['US-CA', 673], ['US-OH', 265], ['US-AL', 232], ['US-AZ', 411], ['US-UT', 225], ['US-NM', 355], ['US-RI', 41], ['US-OK', 345], ['US-MT', 181], ['US-LA', 233], ['US-PA', 232], ['US-NY', 363], ['US-NE', 157], ['US-IN', 163], ['US-MN', 183], ['US-VA', 587], ['US-ND', 117], ['US-MA', 237], ['US-FL', 327], ['US-DC', 848], ['US-WI', 149], ['US-ME', 51], ['US-MS', 171], ['US-CT', 75], ['US-TN', 190], ['US-OR', 243], ['US-SC', 213], ['US-AR', 162], ['US-KS', 162], ['US-NH', 65], ['US-MO', 254], ['US-MD', 344], ['US-IA', 85], ['US-SD', 241], ['US-NJ', 137], ['US-NV', 171], ['US-VT', 31]]
         var datatable = google.visualization.arrayToDataTable(data);
         var options = {'region': 'US', 'width': 600, 'height': 400, 'resolution': 'provinces'};
 
@@ -45,8 +28,3 @@ chartcode = """
       </div>
   </body>
 </html>
-"""
-
-htmlfile = open("1-9.html", "w")
-htmlfile.write(chartcode % thelist)
-htmlfile.close()
