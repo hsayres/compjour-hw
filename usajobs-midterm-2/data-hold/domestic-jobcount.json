@@ -1,119 +1,27 @@
 [
   [
-    "State",
-    "Job Count"
-  ],
-  [
-    "West Virginia",
-    143
-  ],
-  [
-    "North Carolina",
-    301
-  ],
-  [
-    "Ohio",
-    267
-  ],
-  [
-    "New Hampshire",
-    63
-  ],
-  [
-    "Louisiana",
-    244
-  ],
-  [
     "District of Columbia",
-    937
+    939
   ],
   [
-    "New York",
-    394
+    "Mississippi",
+    184
   ],
   [
-    "Montana",
-    199
-  ],
-  [
-    "New Mexico",
-    365
-  ],
-  [
-    "Massachusetts",
-    240
-  ],
-  [
-    "Minnesota",
-    193
-  ],
-  [
-    "Kentucky",
-    189
+    "Alabama",
+    231
   ],
   [
     "Michigan",
     253
   ],
   [
-    "South Carolina",
-    206
-  ],
-  [
-    "South Dakota",
-    238
-  ],
-  [
-    "Vermont",
-    33
-  ],
-  [
-    "Washington",
-    393
-  ],
-  [
     "Hawaii",
     185
   ],
   [
-    "Wyoming",
-    161
-  ],
-  [
-    "Indiana",
-    170
-  ],
-  [
     "Rhode Island",
     40
-  ],
-  [
-    "Florida",
-    357
-  ],
-  [
-    "Missouri",
-    268
-  ],
-  [
-    "Tennessee",
-    196
-  ],
-  [
-    "Delaware",
-    59
-  ],
-  [
-    "Arkansas",
-    166
-  ],
-  [
-    "Idaho",
-    162
-  ],
-  [
-    "Nebraska",
-    165
   ],
   [
     "Illinois",
@@ -124,72 +32,144 @@
     237
   ],
   [
-    "Texas",
-    637
-  ],
-  [
-    "Pennsylvania",
-    249
-  ],
-  [
-    "Connecticut",
-    84
-  ],
-  [
-    "Iowa",
-    94
-  ],
-  [
     "Georgia",
     419
-  ],
-  [
-    "Maine",
-    54
-  ],
-  [
-    "Utah",
-    227
-  ],
-  [
-    "North Dakota",
-    115
-  ],
-  [
-    "California",
-    678
-  ],
-  [
-    "Mississippi",
-    184
-  ],
-  [
-    "Maryland",
-    397
-  ],
-  [
-    "Wisconsin",
-    151
-  ],
-  [
-    "Nevada",
-    177
-  ],
-  [
-    "New Jersey",
-    140
   ],
   [
     "Kansas",
     156
   ],
   [
-    "Alabama",
-    229
+    "Indiana",
+    170
+  ],
+  [
+    "New Jersey",
+    140
+  ],
+  [
+    "North Carolina",
+    301
+  ],
+  [
+    "Maryland",
+    397
+  ],
+  [
+    "Utah",
+    227
+  ],
+  [
+    "Louisiana",
+    244
+  ],
+  [
+    "North Dakota",
+    115
+  ],
+  [
+    "Missouri",
+    268
+  ],
+  [
+    "Texas",
+    637
+  ],
+  [
+    "Vermont",
+    33
+  ],
+  [
+    "Connecticut",
+    84
+  ],
+  [
+    "Arkansas",
+    166
+  ],
+  [
+    "California",
+    680
+  ],
+  [
+    "Montana",
+    199
+  ],
+  [
+    "Maine",
+    54
+  ],
+  [
+    "Massachusetts",
+    240
   ],
   [
     "Colorado",
+    358
+  ],
+  [
+    "Nebraska",
+    165
+  ],
+  [
+    "Idaho",
+    162
+  ],
+  [
+    "Washington",
+    393
+  ],
+  [
+    "New Hampshire",
+    63
+  ],
+  [
+    "New York",
+    394
+  ],
+  [
+    "Delaware",
+    59
+  ],
+  [
+    "Tennessee",
+    196
+  ],
+  [
+    "Nevada",
+    177
+  ],
+  [
+    "Wisconsin",
+    151
+  ],
+  [
+    "Iowa",
+    94
+  ],
+  [
+    "Florida",
     357
+  ],
+  [
+    "Pennsylvania",
+    249
+  ],
+  [
+    "Alaska",
+    228
+  ],
+  [
+    "Ohio",
+    267
+  ],
+  [
+    "West Virginia",
+    143
+  ],
+  [
+    "Wyoming",
+    161
   ],
   [
     "Oklahoma",
@@ -197,14 +177,30 @@
   ],
   [
     "Virginia",
-    615
+    616
+  ],
+  [
+    "New Mexico",
+    365
   ],
   [
     "Arizona",
     419
   ],
   [
-    "Alaska",
-    228
+    "South Dakota",
+    238
+  ],
+  [
+    "Kentucky",
+    189
+  ],
+  [
+    "Minnesota",
+    193
+  ],
+  [
+    "South Carolina",
+    206
   ]
 ]

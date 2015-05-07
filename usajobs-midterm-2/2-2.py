@@ -6,12 +6,11 @@ CODES_URL = "http://stash.compjour.org/data/usajobs/us-statecodes.json"
 usdict = json.loads(requests.get(CODES_URL).text)
 
 mylist = []
-mylist.append(["State", "Job Count"])
 for state in usdict:
 	atts = {'CountrySubdivision': state, 'NumberOfJobs': 1}
 	resp = requests.get(BASE_USAJOBS_URL, params = atts)
-	jobcount = int(resp.json()['TotalJobs'])
-	print("Number of jobs:", jobcount)
+	data = resp.json()
+	jobcount = int(data['TotalJobs'])
 	mylist.append([state, jobcount])
 
 os.makedirs("data-hold", exist_ok=True)
