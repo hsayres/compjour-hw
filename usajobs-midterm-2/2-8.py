@@ -1,24 +1,24 @@
 import json
 from operator import itemgetter
-with open("sample-barchart-2.html") as f:
+with open("sample-geochart-2.html") as f:
     htmlstr = f.read()
-with open("data-hold/domestic-jobcount.json") as f:
+with open("data-hold/intl-jobcount.json") as f:
     data = json.loads(f.read())
 
+chartdata = [['Country', 'Jobs']]
+for country in data:
+	if country[1]>0:
+		chartdata.append(country)
 sorteddata = sorted(data, key = itemgetter(1), reverse = True)
-alphdata = sorted(data)
 
-# Just charting the top 10 states
-chartdata = [['State', 'Jobs']]
-chartdata.extend(sorteddata[0:10])
-# include all the states
+#chartdata.extend(sorteddata[1:])
 tablerows = []
-for d in alphdata:
+for d in sorteddata:
     tablerows.append("<tr><td>%s</td><td>%s</td></tr>" % (d[0], d[1]))
 
 tablerows = "\n".join(tablerows)
 #
-with open("2-7.html", "w") as f:
+with open("2-8.html", "w") as f:
     htmlstr = htmlstr.replace('#CHART_DATA#', str(chartdata))
     htmlstr = htmlstr.replace('#TABLE_ROWS#', tablerows)
     f.write(htmlstr)
