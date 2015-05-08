@@ -5,10 +5,11 @@ data = resp.json()
 #OrganizationName
 mydict = {}
 for job in data['JobData']:
-    if job['OrganizationName'] in mydict:
-        mydict['OrganizationName'] += 1
-    else:
-        mydict['OrganizationName'] = 1
+	org = job['OrganizationName']
+	if org in mydict:
+		mydict[org] += 1
+	else:
+		mydict[org] = 1
 
 print(mydict)
         
