@@ -8,3 +8,4 @@ Not enough time to make any substantial progress so don't know how much work I r
 
 ## **Sketch--**
 You visit my website, zoom in to your neighborhood, and the information is right there.
+![Alt text](img.jpg)
