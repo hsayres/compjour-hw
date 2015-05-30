@@ -7,5 +7,5 @@ Haven't made any tangible progress. Waiting until post-thesis/post-finals. Sorry
 Not enough time to make any substantial progress so don't know how much work I really have left to do or what potential roadblocks I might run into.
 
 ## **Sketch--**
-You visit my website, zoom in to your neighborhood, and the information is right there.
+I honestly have not really thought through it yet, but possibly something like this:
 ![Alt text](img.jpg)
