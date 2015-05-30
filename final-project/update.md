@@ -8,4 +8,4 @@ Not enough time to make any substantial progress so don't know how much work I r
 
 ## **Sketch--**
 I honestly have not really thought through it yet, but possibly something like this:
-![Alt text](img.jpg)
+![Alt text](img.png)
