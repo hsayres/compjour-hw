@@ -1,6 +1,4 @@
 
-
-
 import csv
 import requests
 CSVURL = 'https://www.federalregister.gov/articles/search.csv?conditions%5Bpublication_date%5D%5Bis%5D=06%2F08%2F2015&conditions%5Btype%5D=NOTICE'
